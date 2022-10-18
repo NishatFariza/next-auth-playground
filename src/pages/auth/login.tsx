@@ -31,7 +31,7 @@ const loginPage = () => {
         </form>
 
         <div className="flex flex-col gap-3 mt-8">
-          <button className=" border rounded py-2 px-4 flex justify-center ">
+          <button className=" border border-stone-50 rounded py-2 px-4 flex justify-center ">
             <svg
               className="h-5 w-5 mr-2 fill-[#4285F4]"
               role="img"
@@ -45,7 +45,7 @@ const loginPage = () => {
           </button>
           <button
             onClick={() => signIn("github")}
-            className=" border rounded py-2 px-4 flex justify-center "
+            className=" border rounded py-2 px-4 flex justify-center border-stone-50"
           >
             <svg
               className="h-5 w-5 mr-2 fill-[#181717]"
@@ -58,7 +58,7 @@ const loginPage = () => {
             </svg>
             <span> Log in with GitHub</span>
           </button>
-          <button className=" border rounded py-2 px-4 flex justify-center items-center ">
+          <button className=" border rounded py-2 px-4 flex justify-center items-center border-stone-50">
             <svg
               className="h-5 w-5 mr-2 fill-[#1DA1F2]"
               role="img"
