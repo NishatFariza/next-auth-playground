@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { useSession } from "next-auth/react";
+import { Session } from "inspector";
 
 const Navbar = () => {
   const session = useSession();
@@ -11,8 +12,14 @@ const Navbar = () => {
       </Link>
 
       <nav className="flex items-center gap-2">
-              <p>{ session.status}</p>
-        <button className="bg-gray-200 px-4 rounded">Logout</button>
+        {session.status === "authenticated" ? (
+          <>
+            <p>{JSON.stringify(session.data.user, null, 2)}</p>
+            <button className="bg-gray-200 px-4 rounded">Logout</button>
+          </>
+        ) : (
+          <button className="bg-gray-200 px-4 rounded">Login</button>
+        )}
       </nav>
     </div>
   );
