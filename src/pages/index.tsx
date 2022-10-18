@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Hello Next Auth</h1>
+    <div className="text-center">
+      <h1 className="text-xl font-semibold">Hello Next Auth</h1>
     </div>
   );
 };
