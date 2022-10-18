@@ -23,7 +23,7 @@ const loginPage = () => {
               id="password"
             />
           </div>
-          <div>
+          <div className="text-center mt-3">
             <button className="bg-teal-600 py-2 px-8 rounded-md text-white">
               Login
             </button>
@@ -43,9 +43,11 @@ const loginPage = () => {
             </svg>
             <span>Log in with Google</span>
           </button>
-          <button className=" border rounded py-2 px-4 flex justify-center ">
+          <button
+            onClick={() => signIn("github")}
+            className=" border rounded py-2 px-4 flex justify-center "
+          >
             <svg
-              onClick={() => signIn("github")}
               className="h-5 w-5 mr-2 fill-[#181717]"
               role="img"
               viewBox="0 0 24 24"

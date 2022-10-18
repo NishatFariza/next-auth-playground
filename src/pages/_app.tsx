@@ -9,7 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     //@ts-ignore
     <SessionProvider session={pageProps.session}>
       <Navbar />
-      <Component {...pageProps} />
+      <div className="mt-20">
+        <Component {...pageProps} />
+      </div>
     </SessionProvider>
   );
 }
