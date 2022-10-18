@@ -4,7 +4,12 @@ const loginPage = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <div className="w-6/12 mx-auto">
-        <h1 className="text-2xl font-semibold text-center">Login to your account</h1>
+              <h1 className="text-2xl font-semibold text-center">Login to your account</h1>
+              
+              <div>
+                  <label htmlFor="email">Email</label>
+                  <input type="email" name="email" id="email" />
+              </div>
 
         <div className="flex flex-col gap-3 mt-8">
           <button className="text-lg border rounded py-2 px-4">
