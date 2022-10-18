@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     //@ts-ignore
     <SessionProvider session={pageProps.session}>
       <Navbar />
-      <div className="mt-20">
+      <div className=" bg-teal-200">
         <Component {...pageProps} />
       </div>
     </SessionProvider>

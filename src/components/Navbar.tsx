@@ -7,7 +7,7 @@ const Navbar = () => {
   const session = useSession();
   return (
     <div className="bg-gray-100 shadow-sm">
-      <div className=" max-w-6xl mx-auto flex justify-between items-center h-20">
+      <div className=" max-w-6xl mx-auto flex justify-between items-center h-14">
         <Link href={`/`}>
           <a className="text-2xl font-semibold">NextAuth</a>
         </Link>

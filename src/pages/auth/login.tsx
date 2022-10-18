@@ -3,7 +3,7 @@ import { signIn } from "next-auth/react";
 
 const loginPage = () => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto py-20 h-[calc(100vh-3.5rem)]">
       <div className="w-6/12 md:w-4/12 mx-auto">
         <h1 className="text-2xl font-semibold text-center">
           Login to your account
