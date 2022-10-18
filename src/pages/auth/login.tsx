@@ -1,4 +1,5 @@
 import React from "react";
+import { signIn } from "next-auth/react";
 
 const loginPage = () => {
   return (
@@ -26,6 +27,8 @@ const loginPage = () => {
             <button className="bg-teal-600 py-2 px-8 rounded-md text-white">
               Login
             </button>
+
+            <button onClick={() => signIn()}>Sign in</button>
           </div>
         </form>
 
